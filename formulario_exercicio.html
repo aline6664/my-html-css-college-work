@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulário </title>
+    <style>
+        input[type=text], input[type=email], input[type=date] {
+            margin: 8px 0;
+            width: 300px;
+        }
+        input[type=submit], input[type=reset] {
+            background-color: rgb(53, 104, 172);
+            color: white;
+            padding: 10px;
+            border: 1px solid rgb(16, 29, 41);
+            margin: 8px;
+        }
+        .dep {
+            margin: 6px;
+        }
+        div.cabecalho{
+            display: table;
+        }
+        label.format {
+            display: table-row;
+        }
+        input.format { 
+            display: table-cell;
+        }
+        #departamento {
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="post" action="">
+    <!---->
+    <div class="cabecalho">
+    <label class="format" for="evento">Evento: </label>
+        <input type="text" id="evento" name="evento" value="" autofocus maxlength="50" required>
+    <br>
+
+    <label class="format" for="nome">Funcionário: </label>
+        <input type="text" id="nome" name="funcionario" value="" required>
+
+    <label class="format" for="email">E-mail: </label>
+        <input type="email" id="email" name="email" value="">
+    <br>
+
+    <label class="format" for="data">Data e Hora: </label>
+        <input type="date" id="data" name="data_hora" value="" min="2023-01-01" max="2023-05-31" required>
+    <br>
+
+    <label class="format" for="local">Local: </label>
+        <input type="text" id="local" name="local" value="" required>
+    <br>
+    </div>
+    <!---->
+
+    <div id="departamento">
+    <label class="dep" for="departamento">Departamento: </label>
+    <select>
+        <option>Departamento 1</option>
+        <option>Departamento 2</option>
+        <option>Departamento 3</option>      
+    </select>
+    </div>
+    <br>
+
+    <p> Equipamento Necessário (marque tudo que for necessário) </p>
+
+        <input type="checkbox" id="equipamento1" name="equipamento" value="Projetor Multimídia (Datashow)">
+            <label for="equipamento1"> Projetor Multimídia (Datashow) </label>
+        <br>
+        <input type="checkbox" id="equipamento2" name="equipamento" value="notebook">
+            <label for="equipamento2"> Notebook </label>
+        <br>
+        <input type="checkbox" id="equipamento3" name="equipamento" value="caixa_de_som">
+            <label for="equipamento3"> Caixa de Som </label>
+        <br>
+        <input type="checkbox" id="equipamento4" name="equipamento" value="microfone">
+            <label for="equipamento4"> Microfone </label>
+
+                <input type="radio" id="com_fio" name="microfone" value="com_fio">
+                    <label for="com_fio"> com fio </label>
+                <input type="radio" id="sem_fio" name="microfone" value="sem_fio">
+                    <label for="sem_fio"> sem fio </label>
+        <br>
+        <input type="checkbox" id="equipamento5" name="equipamento" value="internet">
+            <label for="equipamento5"> Acesso a Internet </label>
+    <br>
+    <br>
+
+    <label for="observacao"> Observações </label> <br>
+        <textarea id="observacao" name="observacao" rows="10" cols="30" size="300" placeholder="Informações adicionais"></textarea>
+    <br>
+    
+    <label for="dt_reserva"> Data da reserva: </label>
+        <input type="date" id="dt_reserva" name="reserva" value="" min="2023-01-01" max="2023-05-31">
+    <br>
+    <br>
+    </form>
+
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Redefinir"
+
+</body>
+</html>

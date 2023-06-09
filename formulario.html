@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-end de Formulário</title>
+    <style>
+        label {
+            color: rgb(204, 75, 15);
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-shadow: rgb(192, 192, 192) 2px 2px 2px;
+        }
+        input {
+            color: white;
+            background-color: rgb(0, 0, 0);
+        }
+        input.button {
+            background-color: rgb(192, 71, 24);
+        }
+    </style>
+</head>
+<body>
+    <form action="/action_page.php">
+        <fieldset>
+        <legend> Nome e Sobrenome </legend>
+            <label for="nome1"> Nome: </label> <br>
+            <input type="text" id="nome1" name="nome" value="">
+            <br>
+            <label for="sobre"> Sobrenome: </label> <br>
+            <input type="text" id="sobre" name="Sobrenome" value="">
+                <p> Campos de input de texto simples. </p>
+                <p> O valor "value" é passado para a variável "name", nesse caso, o vazio é considerado a entrada de input. </p><br> <br>
+        </fieldset>
+
+        <label for="area"> Digite sua opinião: </label> <br>
+        <textarea id="area" name="message" rows="10" cols="30"> </textarea>
+        <p> Usado para inputs com textos gigantes. </p> <br> <br>
+
+        <label for="dt_nascimento"> Data de Nascimento: </label> <br>
+        <input type="date" id="dt_nascimento" name="nascimento" value="">
+        <p> Apresenta um calendário de dia, mês e ano. </p> <br> <br>
+
+        <label for="dt_hora"> Data e Hora de Nascimento: </label> <br>
+        <input type="datetime-local" id="dt_hora" name="hora_nascimento" value="">
+        <p> Idem, porém adicionalmente o horário. </p> <br> <br>
+
+        <label for="hora"> Hora: </label> <br>
+        <input type="time" id="hora" name="hora_chamada" value="">
+        <p> Apenas o horário. </p> <br> <br>
+
+        <label for="mes"> Mês de nascimento: </label> <br>
+        <input type="month" id="mes" name="mes_nascimento" value="">
+        <p> Apenas o mês. </p> <br> <br>
+
+        <label for="senha"> Senha: </label> <br>
+        <input type="password" id="senha" name="Senha" value="">
+        <p> Campo para senha. Automaticamente transforma o texto em pontos. </p> <br> <br>
+
+        <label for="email"> E-mail: </label> <br>
+        <input type="email" id="email" name="Email" value="">
+        <p> Campo para e-mail. Verifica a presença de "@" para considerar a validade do input. </p> <br> <br>
+
+        <label for="qtd"> Quantidade </label> (entre 1 a 10):
+        <input type="number" id="qtd" name="qtd" min="1" max="10">
+        <p> Entradas numéricas, com restrição de intervalo de 1 a 10. </p> <br> <br>
+
+        <input type="radio" id="casado" name="est_civil" value="casado">
+        <label for="casado"> Casado </label> <br>
+
+        <input type="radio" id="solteiro" name="est_civil" value="solteiro">
+        <label for="solteiro"> Soleiro </label> <br>
+
+        <p> A ordem do código muda aqui, pois a "bolinha" vem na frente do texto. </p>
+        <p> Importante fazer todas possuírem a mesma variável (name=)! </p> <br> <br>
+
+
+
+        <input class="button" type="submit" value="Enviar">
+        <input class="button" type="reset" value="Limpar">
+        <input class="button" type="button" value="Imprimir" onclick="print()">
+    </form>
+</body>
+</html>

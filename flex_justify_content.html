@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox: Justify Content</title>
+    <style>
+        body {
+            width: 70%;
+            max-width: 960px;
+            margin: 20px auto;
+        }
+        button {
+            font-size: 18px;
+            padding: 10px;
+            width: 15%;
+            color: white;
+            background-color: rgb(44, 110, 185);
+        }
+        button:hover {
+            color: rgb(193, 221, 247);
+            background-color:rgb(37, 50, 122);
+            transition: 0.2s;
+        }
+        nav {
+            height: 100px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-around; /*eixo horizontal, da esquerda p/ direita*/
+            align-items: center; /*eixo vertical, de cima p/ baixo*/
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <button> Home </button>
+        <button> Cursos </button>
+        <button> Secretaria </button>
+        <button> Serviços </button>
+        <button> Contato </button>
+    </nav>
+
+    <h1> Centralização Perfeita </h1>
+    <div class="flex-container">
+        <div> </div>
+    </div>
+</body>
+</html>

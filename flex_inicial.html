@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Flex Box: Básicos</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        header {
+            background: rosybrown;
+            height: 100px;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+            line-height: 100px;
+            margin: 0;
+        }
+        article {
+            padding: 10px;
+            margin: 10px;
+            background: wheat;
+            flex: 1; /*trabalha com proporção em vez de px, %, etc...*/
+        }
+        article:nth-of-type(3) { /*pega o terceiro article */
+            flex: 2;
+        }
+        section {
+            display: flex; /*flex container*/
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Exemplo de FlexBox </h1>
+    </header>
+    <section>
+        <article>
+            <h2> Text 1 </h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sodales odio est, sed varius risus elementum a. Duis malesuada aliquet
+                diam, a euismod lorem interdum a. Aenean convallis eleifend justo, et interdum nulla euismod aliquet. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Curabitur eleifend ligula eros, ac interdum sem tincidunt ut. Orci varius natoque penatibus et magnis
+                dis parturient montes, nascetur ridiculus mus. Donec metus elit, egestas vehicula tellus sit amet, posuere dictum urna. Donec malesuada
+                imperdiet porta. Morbi fringilla elit ex, vel facilisis felis finibus eget. Fusce non purus quam. Fusce at porttitor metus, ut ullamcorper
+                libero. Integer faucibus dui mi, vel suscipit risus lobortis ac. In lacinia leo vel sollicitudin hendrerit. Praesent tincidunt sagittis
+                augue, et consectetur nunc bibendum quis. In erat nunc, feugiat sed fermentum sagittis, sodales maximus lacus. Aenean tempor vulputate
+                nunc, ut porta tellus tincidunt quis. Donec pulvinar tincidunt odio, et accumsan massa condimentum ac. Vivamus blandit arcu lorem.
+                Vivamus nunc augue, bibendum vulputate sem ut, gravida aliquet sapien. Aenean quis interdum velit. </p>
+        </article>
+
+        <article>
+            <h2> Text 2 </h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sodales odio est, sed varius risus elementum a. Duis malesuada aliquet
+                diam, a euismod lorem interdum a. Aenean convallis eleifend justo, et interdum nulla euismod aliquet. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Curabitur eleifend ligula eros, ac interdum sem tincidunt ut. Orci varius natoque penatibus et magnis
+                dis parturient montes, nascetur ridiculus mus. Donec metus elit, egestas vehicula tellus sit amet, posuere dictum urna. Donec malesuada
+                imperdiet porta. Morbi fringilla elit ex, vel facilisis felis finibus eget. Fusce non purus quam. Fusce at porttitor metus, ut ullamcorper
+                libero. Integer faucibus dui mi, vel suscipit risus lobortis ac. In lacinia leo vel sollicitudin hendrerit. Praesent tincidunt sagittis
+                augue, et consectetur nunc bibendum quis. In erat nunc, feugiat sed fermentum sagittis, sodales maximus lacus. Aenean tempor vulputate
+                nunc, ut porta tellus tincidunt quis. Donec pulvinar tincidunt odio, et accumsan massa condimentum ac. Vivamus blandit arcu lorem.
+                Vivamus nunc augue, bibendum vulputate sem ut, gravida aliquet sapien. Aenean quis interdum velit. </p>  
+        </article>
+
+        <article>
+            <h2> Texto 3 </h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sodales odio est, sed varius risus elementum a. Duis malesuada aliquet
+                diam, a euismod lorem interdum a. Aenean convallis eleifend justo, et interdum nulla euismod aliquet. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Curabitur eleifend ligula eros, ac interdum sem tincidunt ut. Orci varius natoque penatibus et magnis
+                dis parturient montes, nascetur ridiculus mus. Donec metus elit, egestas vehicula tellus sit amet, posuere dictum urna. Donec malesuada
+                imperdiet porta. Morbi fringilla elit ex, vel facilisis felis finibus eget. Fusce non purus quam. Fusce at porttitor metus, ut ullamcorper
+                libero. Integer faucibus dui mi, vel suscipit risus lobortis ac. In lacinia leo vel sollicitudin hendrerit. Praesent tincidunt sagittis
+                augue, et consectetur nunc bibendum quis. In erat nunc, feugiat sed fermentum sagittis, sodales maximus lacus. Aenean tempor vulputate
+                nunc, ut porta tellus tincidunt quis. Donec pulvinar tincidunt odio, et accumsan massa condimentum ac. Vivamus blandit arcu lorem.
+                Vivamus nunc augue, bibendum vulputate sem ut, gravida aliquet sapien. Aenean quis interdum velit. </p>
+        </article>
+    </section>
+</body>
+</html>
