@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position when it's relative</title>
+    <style>
+        body {
+            background:rgb(214, 214, 214);
+        }
+        div.relative {
+            position: relative;
+            left: 10px;
+            border: 3px dotted red;
+            width: 400px;
+            height: 200px;
+            background-color: darkblue;
+            color: yellow;
+            padding-left: 20px;
+        }
+        div.absolute {
+            position: absolute;
+            width: 200px;
+            height: 80px;
+            top: 80px;
+            right: 0px;
+            border: 2px outset yellow;
+            background-color: red;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Position </h1>
+        <p> O elemento é posicionado de acordo com o fluxo normal do documento e, em seguida, deslocado em relação à 
+            própria base nos valores de top, right, bottom e left.
+        </p>
+
+    <div class="relative">
+        <p> Este elemento foi posicionado relativamente relativo. </p>
+            <div class="absolute">
+                <p> Este aqui é absolutamente absoluto. </p>
+            </div>
+    </div>
+
+</body>
+</html>
