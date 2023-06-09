@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Menu Suspenso </title>
+    <style>
+        body {
+            margin-left: 20px;
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            display: inline-block;
+            position: relative;
+            top: 0;
+        }
+        li a { /*menu (botão)*/
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .dropdown:hover { /*mover o mouse sobre o botão*/
+            background-color: rgb(211, 9, 42);
+        }
+        .dropdown-conteudo { /*menu suspenso*/
+            display: none;
+            position: absolute;
+            background-color:rgb(255, 196, 0);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.9);
+        }
+        .dropdown-conteudo a { /*link que está o menu suspenso*/
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown:hover .dropdown-conteudo { /*aparece itens do menu suspenso*/
+            display: block;
+        }
+        .dropdown-conteudo a:hover { /*mover o cursor sobre os itens do menu*/
+            background-color: rgb(26, 0, 175);
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h2> Menu Suspenso </h2>
+    <p> Mova o mouse sobre o botão para abrir o menu suspenso! </p>
+
+    <ul>
+        <li class="dropdown"><a href="#sobre"> Frutas </a>
+            <div class="dropdown-conteudo">
+                <a href="https://pt.wikipedia.org/wiki/Banana">Banana</a>
+                <a href="https://pt.wikipedia.org/wiki/Ma%C3%A7%C3%A3">Maçã</a>
+                <a href="https://pt.wikipedia.org/wiki/Uva">Uva</a>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>

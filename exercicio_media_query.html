@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            background-color:rgb(235, 239, 243);
+        }
+        nav ul {
+            list-style-type: none;
+            float: left;
+            padding-left: 5px;
+            margin: 15px;
+            z-index: 1;
+        }
+        li {
+            display: block;
+            background-color: rgb(67, 118, 160);
+            color: white;
+            padding: 8px;
+            margin-bottom: 3px;
+            width: 240px;
+        }
+        li:hover {
+            background-color:rgb(26, 50, 61);
+            color: rgb(172, 184, 224);
+            transition: 0.3s;
+        }
+        #link {
+            text-decoration: none;
+            color: white;
+        }
+        div.text {
+            text-align: justify;
+            margin: 20px;
+        }
+        p {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-indent: 40px;
+        }
+
+        @media screen and (max-width: 479px) {
+            nav ul {
+                clear: left;
+                position: fixed;
+                width: 100%;
+                margin: 0 2px 0;
+                padding: 0;
+                top: 10px;
+            }
+            li {
+                padding: 8px;
+                width: 100%;
+            }
+            div.text {
+                top: 200px;
+                position: relative;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a id="link" href="#home">Home</a></li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Products</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <div class="text">
+        <h1> Lorem ipsum dolor sit amet </h1>
+
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porttitor, ante eget mattis porttitor, sapien ipsum
+            lacinia elit, sed dignissim purus arcu in urna. Mauris interdum nibh id magna placerat, ac rhoncus dui egestas. In rhoncus
+            lectus vel mollis porta. Proin nec mi ligula. Donec pulvinar, ex nec vestibulum varius, odio purus egestas ex, id pulvinar
+            turpis risus ac sem. Maecenas dictum, quam vel mattis dictum, metus lectus bibendum ligula, in blandit tellus est ut orci.
+            Donec ligula nunc, bibendum sed semper id, tempor non lectus. Aliquam viverra, enim pellentesque commodo congue, felis nisl
+            facilisis dui, in dictum lorem erat in enim. Phasellus commodo arcu imperdiet lacinia rhoncus. Aenean at mattis arcu. Morbi
+            laoreet at nibh vel tempus. Aliquam ut orci luctus, feugiat ex quis, iaculis purus. Phasellus nisl ex, gravida nec ultricies
+            sed, fermentum sit amet lorem. Vestibulum aliquet, ligula id mattis suscipit, metus risus hendrerit risus, sed porttitor neque
+            enim at lacus. </p>
+        
+        <p> Aliquam imperdiet nisi quis neque rhoncus eleifend et et lorem. Maecenas venenatis luctus sodales. Praesent pretium tellus ut
+            dictum viverra. Integer elit lacus, efficitur et sem pharetra, mollis accumsan velit. Maecenas maximus leo tellus, id euismod
+            metus porttitor vitae. Vestibulum ut nulla quam. Curabitur congue vehicula aliquet. Proin sed scelerisque lacus. Nulla ipsum
+            est, feugiat quis posuere in, convallis sed enim. Quisque sodales nisl nunc, sit amet consectetur velit bibendum ac. Sed a
+            ipsum ac felis maximus aliquet. Integer tristique viverra leo, eget posuere ex venenatis in. Cras semper pretium lectus, sed
+            dapibus leo tempus ac. </p>
+
+        <p> Nam scelerisque sapien at orci venenatis, ut ornare mi mollis. Suspendisse potenti. Suspendisse sit amet mi eu libero consequat
+            ornare id id erat. Donec rutrum vulputate ante, et sollicitudin eros sollicitudin nec. Vivamus non urna ante. Sed egestas massa
+            quis efficitur dignissim. Curabitur blandit massa nec lobortis elementum. Praesent sagittis nisl nec ligula imperdiet hendrerit.
+            Fusce sollicitudin justo sit amet rutrum tincidunt. Donec non augue nec est tincidunt sodales. </p>
+
+        <p> Vestibulum massa odio, fermentum fermentum imperdiet varius, ultricies nec risus. Cras quis posuere felis. Phasellus dolor
+            tortor, facilisis semper sapien eget, dictum pharetra libero. Ut eleifend magna et mauris vulputate, in commodo nisi semper.
+            Donec vitae velit pretium nunc vestibulum accumsan. Nullam id egestas augue. Aliquam vel ex quam. Morbi tincidunt at quam non
+            suscipit. Mauris eu consectetur risus, non tempus quam. Curabitur luctus porttitor dignissim. Maecenas a vestibulum tortor,
+            eget imperdiet magna. Integer ultricies, dui tincidunt venenatis dignissim, ante metus facilisis purus, sit amet auctor enim
+            leo eget libero. Vestibulum non pellentesque massa. Vestibulum quis lorem eget nulla dictum tempor. </p>
+
+        <p> Sed efficitur suscipit augue ac commodo. Nam accumsan condimentum congue. Donec sit amet erat in purus dictum placerat. Vivamus
+            placerat augue quis tristique facilisis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum a tellus sed
+            nibh porttitor mollis quis id turpis. Nullam id diam nec turpis aliquet fermentum. </p>
+    </div>
+</body>
+</html>

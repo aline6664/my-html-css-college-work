@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Barra de navegação Horizontal</title>
+    <style>
+        * {
+            color: black;
+            margin: 0;
+        }
+        div {
+            margin-top: 50px;
+            padding: 20px;
+            text-align: justify;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            background-color: rgb(218, 218, 218);
+            position: fixed;
+            top: 0;
+        }
+        li {
+            float: left;
+            border-right: 1px solid grey;
+        }
+        li a {
+            display: block; /* Permite todo o bloco ao redor do link clicável */
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color:rgb(255, 118, 141);
+            color: rgb(255, 255, 255);
+            transition: background-color 0.4s;
+        }
+        li:last-child {
+            border-right: none;
+            float: right;
+        }
+        li a:hover:not(.active) {
+            background-color: rgb(90, 104, 109);
+        }
+        .active {
+            background-color: rgb(201, 0, 33);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#home"> Home </a></li>
+        <li><a href="#vestibular"> Vestibular </a></li>
+        <li><a href="#graduacao"> Graduação </a></li>
+        <li><a href="#extensao"> Extensão </a></li>
+        <li><a href="#professores"> Professores </a></li>
+        <li><a class ="active" href="#contato"> Contato </a></li>
+    </ul>
+    
+    <div>
+        <h1> TEXTO DE CIMA </h1>
+    <p> texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto
+    </p>
+    </div>
+</body>
+</html>

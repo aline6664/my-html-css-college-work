@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cronograma </title>
+    <style>
+        table {
+            width: 50%;
+            margin: auto;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+            background-color: rgb(252, 221, 225);
+        }
+        tr:first-child {
+            font-weight:300;
+        }
+        th.formata {
+            text-align: left;
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <th colspan="4">Ensaios Ballet</th>
+            <tr style="font-weight:bold;">
+                <td>Turma 1</td>
+                <td>Turma 2</td>
+                <td>Turma 3</td>
+                <td>Turma 4</td>
+            </tr>
+            <tr>
+                <td>08h00</td>
+                <td>10h00</td>
+                <td>14h00</td>
+                <td>16h00</td>
+            </tr>
+        <th colspan="4">Ensaios Sapateado</th>
+            <tr style="font-weight:bold;">
+                <td>Turma 1</td>
+                <td>Turma 2</td>
+                <td>Turma 3</td>
+                <td>Turma 4</td>
+            </tr>
+            <tr>
+                <td>08h00</td>
+                <td>10h00</td>
+                <td>14h00</td>
+                <td>16h00</td>
+            </tr>
+    </table>
+
+    <br> <br> <br>
+
+    <table>
+        <th class="formata "rowspan="3">Ensaios Ballet</th>
+            <tr style="font-weight:bold;">
+                <td>Turma 1</td>
+                <td>Turma 2</td>
+                <td>Turma 3</td>
+                <td>Turma 4</td>
+            </tr>
+            <tr>
+                <td>08h00</td>
+                <td>10h00</td>
+                <td>14h00</td>
+                <td>16h00</td>
+            </tr>
+        <th class="formata" rowspan="3">Ensaios Sapateado</th>
+            <tr style="font-weight:bold;">
+                <td>Turma 1</td>
+                <td>Turma 2</td>
+                <td>Turma 3</td>
+                <td>Turma 4</td>
+            </tr>
+            <tr>
+                <td>08h00</td>
+                <td>10h00</td>
+                <td>14h00</td>
+                <td>16h00</td>
+            </tr>       
+    </table>
+</body>
+</html>

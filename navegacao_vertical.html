@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Barra de navegação Vertical </title>
+    <style>
+        * {
+            color: black;
+            margin: 0;
+        }
+        div {
+            margin-left: 20%;
+            padding: 20px 16px;
+            text-align: justify;
+            height: 100vh;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 20%;
+            background-color: rgb(43, 43, 43);
+            position: fixed;
+            height: 100vh;
+            overflow: auto; /* Cria uma barra de rolagem quando a tela é menor */
+        }
+        li a {
+            display: block; /* Permite todo o bloco ao redor do link clicável */
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color:rgb(255, 118, 141);
+            color: rgb(255, 255, 255);
+            transition: background-color 0.4s;
+        }
+        li a:hover:not(.active) {
+            background-color: rgb(90, 104, 109);
+        }
+        .active {
+            background-color: rgb(201, 0, 33);
+            color: white;
+        }
+        p {
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a class="active" href="#home"> Home </a></li>
+        <li><a href="#vestibular"> Vestibular </a></li>
+        <li><a href="#graduacao"> Graduação </a></li>
+        <li><a href="#extensao"> Extensão </a></li>
+        <li><a href="#professores"> Professores </a></li>
+        <li><a href="#contato"> Contato </a></li>
+    </ul>
+    
+    <div>
+        <h1 style="border-bottom: 2px solid black;"> TEXTO DE CIMA </h1>
+    <p> texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto
+    </p>
+    <p> texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto
+    </p>
+
+    <br>
+
+    <h2 id="#vestibular"style="border-bottom: 2px solid black;"> Vestibular </h2>
+    <p> texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto
+    </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mesa em inglês </title>
+    <style>
+        table {
+            width: 50%;
+            margin: auto;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            color: rgb(197, 179, 176);
+            background-color: rgb(52, 50, 68);
+        }
+        td {
+            height: 50px; /* O vertical-align precisa ter um espaço grande para funcionar*/
+            vertical-align: bottom;
+        }
+        tr:nth-child(even) {
+            background-color:bisque;
+        }
+        tr:nth-child(odd) {
+            background-color: gainsboro;
+        }
+        tr:hover {
+            background-color: rgb(177, 166, 158);
+            color: white;
+            transition: 0.3s;
+        }
+        table#formata {
+            vertical-align: top;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <h2>Tabelas</h2>
+
+    <table>
+        <caption>Um título/legenda</caption>
+        <th colspan="3">Cadastro de Produtos</th>
+        <tr>
+            <th>Produtos</th>
+            <th>Quantidade</th>
+            <th>Valor Unitário</th>
+        </tr>
+        <tr>
+            <td>Cadernos</td>
+            <td>3</td>
+            <td>10,5</td>
+        </tr>
+        <tr>
+            <td>Caneta</td>
+            <td>12</td>
+            <td>1,5</td>
+        </tr>
+        <tr>
+            <td>Estojo</td>
+            <td>20</td>
+            <td>3,0</td>
+        </tr>
+    </table>
+
+    <br> <br>
+
+    <table id="formata">
+        <tr>
+            <th colspan="2">Cadastro de Alunos</th>
+        </tr>
+        <tr>
+            <td>Nome</td>
+            <td>Joana</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Telefone</td>
+            <td>99226-5352</td>
+        </tr>
+        <tr>
+            <td>99871-4582</td>
+        </tr>
+    </table>
+</body>
+</html>

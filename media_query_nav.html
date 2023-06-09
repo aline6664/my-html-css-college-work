@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query com Barras de Navegação</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+        }
+        /*barra de navegação*/
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: black;
+            z-index: 1;
+        }
+        li a {
+            float: left;
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color: ghostwhite;
+            color: black;
+            transition: 0.3s;
+        }
+        /* formatação da posição do texto em relação a barra de nav*/
+        header h2, #main {
+            position: relative; /* os efeitos de margin serão aplicados em relação a onde o texto está por default */
+            top: 50px;
+            margin-left: 10px;
+            margin-right: 10px;
+            text-align: justify;
+        }
+        /*rodapé*/
+        footer {
+            position: relative;
+            top: 70px;
+            background: black;
+            color: white;
+        }
+        /*web responsivo*/
+        /*quando a tela for menor que 600px, o menu será exibido verticalmente*/
+        @media screen and (max-width: 600px) {
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                background-color: black;
+                display: inline-block;
+                position: relative;
+                top: 0;
+            }
+            li a {
+                float: none;
+                display: inline-block;
+                width: 100%;
+            }
+            #main {
+                margin-top: 190px; /* quando o menu é descido verticalmente, ela cobre o texto, logo necessita de espaço */
+            }
+            header h2 {
+                top: 230px; /* mesma coisa */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home"> Home </a></li>
+                <li><a href="sobre"> Quem somos </a></li>
+                <li><a href="cursos"> Cursos </a></li>
+                <li><a href="contato"> Contato </a></li>
+                <li><a href="cadastro"> Cadastro </a></li>
+            </ul>
+        </nav>
+        <h2> Conteúdo Introdutório </h2>
+    </header>
+
+    <article id="main">
+        <h1> What is Lorem Ipsum? </h1>
+            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+       
+        <h1> Where does it come from? </h1>
+            <p> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years
+                old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum
+                passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33
+                of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular
+                during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. </p>
+
+            <p> The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum
+                et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+    </article>
+
+        <footer>
+            <p>&copy; 2023 - Nome do Site. Todos direitos reservados. </p>
+        </footer>
+</body>
+</html>

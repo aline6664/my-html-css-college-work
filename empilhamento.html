@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black
+        }
+        .geral {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+        }
+
+        #cubo1 {
+            background: blue;
+            left: 100px;
+            top: 50px;
+            z-index: 3;
+        }
+
+        #cubo2 {
+            background: red;
+            left: 300px;
+            top: 400px;
+            z-index: 2;
+        }
+
+        #cubo3 {
+            background: yellow;
+            left: 200px;
+            top: 250px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="cubo1" class="geral">
+    </div>
+
+    <div id="cubo2" class="geral">
+    </div>
+
+    <div id="cubo3" class="geral">
+    </div>
+
+</body>
+</html>

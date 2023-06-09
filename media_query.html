@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body { /* CSS já estabelecido, nesse caso ele será aplicado se abaixo de 800px */
+        color: yellow;
+        background-color: darkred;  
+    }
+
+    @media screen and (min-width: 800px) and (max-width: 1200px) { /* se o tamanho da tela for entre 800 a 1200px */
+        body {
+            color: yellowgreen;
+            background-color: darkblue;
+        }
+    }
+
+    @media screen and (min-width: 1201px) { /* se for 1201px ou MAIS */
+        body {
+            color: darkgoldenrod;
+            background-color: black;
+        }
+    }
+</style>
+</head>
+
+<body>
+    <h1> Altere a janela do browser e veja a mágica </h1>
+    <p> As cores mudarão dependendo do tamanho! </p>
+</body>
+</html>

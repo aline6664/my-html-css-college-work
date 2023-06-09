@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        p.texto_magico {
+            display: none;
+            background-color:black;
+            padding: 20px;
+        }
+        div:hover p {
+            display: block;
+        }
+        a:link {
+            color: red;
+        }
+        a:visited {
+            color: rgb(202, 224, 1);
+        }
+        a,div:hover {
+            color: rgb(255, 196, 32);
+            background-color: crimson;
+            display: block;
+        }
+        a,div:active {
+            color: blue;
+        }
+        div {
+            border: 2px solid black;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+            margin: auto;
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p><a href="https://www.youtube.com/" target="_blank"> aqui tem link </a></p>
+    </div>
+
+    <div>
+        ???
+        <p class="texto_magico"> OH! </p>
+    </div>
+</body>
+</html>
