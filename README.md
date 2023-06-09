@@ -1,2 +1,2 @@
 # my-html-css-college-work
-test2
+This is a compilation of my HTML/CSS works from my college classes. Most of them are currently simple lesson exercicies, as I'm still on my first semester. I hope to learn more and increase my skills further in the future.
